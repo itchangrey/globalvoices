@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Global Voices Entertainment</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/logo.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Saira:wght@500;600;700&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        /* Chat Widget Icon */
+        .chat-widget {
+            position: fixed;
+            bottom: 40px;
+            right: 20px;
+            background-color: #0fff37;
+            color: white;
+            border-radius: 30%;
+            padding: 20px;
+            cursor: pointer;
+            z-index: 1000;
+        }
+
+        .chat-widget:hover {
+            background-color: #a9f860;
+        }
+
+        /* Chat Widget Modal */
+        .chat-widget-modal {
+            display: none;
+            position: fixed;
+            bottom: 80px;
+            right: 20px;
+            width: 300px;
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+        .chat-widget-header {
+            padding: 10px;
+            background-color: #ffffff;
+            color: white;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .chat-widget-body {
+            padding: 10px;
+        }
+
+        .chat-widget-body a.btn {
+            display: block;
+            width: 100%;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .close {
+            background: none;
+            border: none;
+            color: rgb(0, 0, 0);
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+    </style>
+    
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" role="status"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid fixed-top px-0 wow fadeIn" data-wow-delay="0.1s">
+        <div class="top-bar text-white-50 row gx-0 align-items-center d-none d-lg-flex">
+            <div class="col-lg-6 px-5 text-start">
+                <small><i class="fa fa-map-marker-alt me-2"></i>Imus Cavite, CVSU Imus Campus</small>
+                <small class="ms-4"><i class="fa fa-envelope me-2"></i>globalvoices@gmail.com</small>
+            </div>
+            <div class="col-lg-6 px-5 text-end">
+                <small>Follow us:</small>
+                <a class="text-white-50 ms-3" href=""><i class="fab fa-facebook-f"></i></a>
+                <a class="text-white-50 ms-3" href=""><i class="fab fa-twitter"></i></a>
+                <a class="text-white-50 ms-3" href=""><i class="fab fa-linkedin-in"></i></a>
+                <a class="text-white-50 ms-3" href=""><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-expand-lg navbar-dark py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+            <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
+                <h1 class="fw-bold text-primary m-0">Global<span class="text-white">Voices</span></h1>
+            </a>
+            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto p-4 p-lg-0">
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
+                    <a href="blogs.html" class="nav-item nav-link">Blogs</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Pages</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="justice.html" class="dropdown-item">Justice Advocates</a>
+                            <a href="entertainment.html" class="dropdown-item">Entertainment</a>
+                            <a href="communication.html" class="dropdown-item">Communication</a>
+                            <a href="team.html" class="dropdown-item">Our Team</a>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header mb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container text-center">
+            <h1 class="display-4 text-white animated slideInDown mb-4">Entertainment</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb justify-content-center mb-0">
+                    <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
+                    <li class="breadcrumb-item text-primary active" aria-current="page">Entertainment</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+
+    <!-- Blog Section Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <h1 class="display-4">Gender Issues, Piracy & Intellectual Property</h1>
+                    <p class="lead">Complexities and Globalization Perspectives</p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="card shadow-lg border-0">
+                        <div class="card-body p-5">
+                            <h2 class="card-title mb-4">Piracy and Intellectual Property Challenges</h2>
+                            <p class="card-text">In the entertainment industry, piracy is the act of illegally accessing or distributing copyrighted content, such as movies, music, 
+                                or video games. While Intellectual property (IP) refers to mind-made creations such as inventions, 
+                                creative and literary works, designs, symbols, names, and pictures utilized in commerce. It is critical to the global economy 
+                                because it promotes innovation, creativity, and economic growth.
+
+                            </p>
+                            <hr class="my-4">
+                            <div class="mb-4">
+                                <p class="card-text" style="text-align: justify;">The problem of piracy presents serious difficulties for owners of intellectual property (IP) 
+                                    rights in a variety of businesses in the current digital era. In addition to harming artists and inventors, piracy—the unlawful duplication or 
+                                    dissemination of content protected by copyright—also has wider ramifications for global economies and consumers. The purpose of this blog is to
+                                     examine the intricacies of piracy, its consequences on intellectual property, and possible ways to lessen them.
+                                </p>
+                                <div class="container">
+                                    <div class="row justify-content-center">
+                                        <div class="col-lg-12" style="text-align: justify;">                                            
+                                            <h5>Understanding Piracy</h5>
+                                            <p>Piracy encompasses a wide range of activities, from illegal downloading of music and movies to counterfeit goods and software piracy. It undermines the efforts of creators and innovators who invest time, resources, and creativity in developing original works. The digital landscape has amplified the scale and ease of piracy, posing a formidable challenge to traditional IP protection measures.</p>
+                                            
+                                            <h5>Impact on Intellectual Property:</h5>
+                                            <p>The impact of piracy on intellectual property is multifaceted. It diminishes revenue streams for content creators and rights holders, stifles innovation by discouraging investment in new ideas, and erodes consumer trust in legitimate products. Industries such as entertainment, software development, publishing, and pharmaceuticals are particularly vulnerable, facing billions of dollars in losses annually due to piracy.</p>
+                                            
+                                            <h5>Challenges Faced:</h5>
+                                            <p>Addressing piracy requires navigating various challenges, including jurisdictional issues in enforcement, evolving technology that facilitates piracy, and differing cultural attitudes towards intellectual property rights. The global nature of the internet further complicates efforts to combat piracy effectively.</p>
+                                            
+                                            <h5>Solutions and Mitigation Strategies:</h5>
+                                            <p>Effective solutions to combat piracy involve a combination of legal, technological, and educational measures. Strengthening IP laws and enforcement mechanisms, promoting digital rights management (DRM) technologies, fostering partnerships between stakeholders, and raising awareness about the ethical and economic consequences of piracy are crucial steps towards mitigating its impact.</p>
+                                            
+                                            <h5>Conclusion:</h5>
+                                            <p>In conclusion, piracy continues to present formidable challenges to intellectual property rights holders worldwide. By understanding its complexities, acknowledging its detrimental effects, and implementing comprehensive solutions, stakeholders can work towards preserving the integrity of intellectual property in the digital age. Together, we can foster an environment that respects creativity, innovation, and the rights of creators in the face of evolving technological landscapes.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>                                
+                                <div class="ratio ratio-16x9 mb-4">
+                                    <iframe src="https://www.youtube.com/embed/UqZJPuyK9VY" title="YouTube video" allowfullscreen></iframe>
+                                </div>
+                                <p class="text-center text-muted small">Federallabs (2019, n.d.). <i>Understanding Intellectual Property (IP).</i> Retrieved from <a href="https://www.youtube.com/watch?v=UqZJPuyK9VY">https://www.yt.com/watch?v=UqZJPuyK9VY</a></p>
+                                <br>
+                                <!-- Bulleted list of student-centric and peaceful approaches -->
+                                <div class="container">
+                                    <div class="row justify-content-center">
+                                        <div class="col-lg-12">
+                                            <p class="card-text" style="font-weight: bold; text-align: center; font-size: 25px;">Peaceful Approaches to Preventing Any Piracy or IP Issues</p>
+                                            <br>
+                                            <!-- Bulleted list of student-centric and peaceful approaches -->
+                                            <ul class="list-unstyled" style="text-align: justify;">
+                                                <li class="mb-3"><strong>Education and Awareness Programs:</strong> Implement educational programs to raise awareness among the public and businesses about the importance of intellectual property rights and the consequences of piracy.</li>
+                                                <li class="mb-3"><strong>Technological Solutions:</strong> Invest in and promote technological tools such as digital rights management (DRM) systems to protect digital content from unauthorized distribution and access.</li>
+                                                <li class="mb-3"><strong>Legal Enforcement:</strong> Strengthen enforcement of intellectual property laws and international treaties to deter piracy and prosecute offenders.</li>
+                                                <li class="mb-3"><strong>Industry Collaboration:</strong> Foster partnerships between content creators, distributors, and technology providers to develop strategies and technologies that prevent piracy.</li>
+                                                <li class="mb-3"><strong>Public Engagement:</strong> Engage consumers through campaigns and initiatives that promote ethical consumption of digital content and discourage piracy.</li>
+                                                <li class="mb-3"><strong>Support for Creators:</strong> Provide support mechanisms and platforms that enable creators to monetize their work fairly, reducing incentives for piracy.</li>
+                                                <li class="mb-3"><strong>Research and Innovation:</strong> Encourage research into new technologies and business models that can mitigate the impact of piracy on intellectual property.</li>
+                                                <li><strong>Policy Advocacy:</strong> Advocate for policies at national and international levels that strengthen intellectual property rights and support anti-piracy efforts.</li>
+                                            </ul>                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <p style="text-align: justify;">In addressing piracy and safeguarding intellectual property, raising awareness and utilizing technologies like DRM are vital steps. Strengthening laws and fostering partnerships among creators and distributors are also crucial. By promoting ethical consumption and supporting fair opportunities for creators, we can cultivate a digital landscape that respects creativity and innovation. These efforts collectively contribute to a more secure and equitable environment for digital content worldwide.</p>                                
+                                <br>
+                                <blockquote class="blockquote my-4">
+                                    <p class="mb-0 text-center">
+                                        &ldquo;Stealing intellectual property is no different than any other kind of theft: it deprives someone of their rightful property&rdquo; 
+                                        <br> - Joe Biden
+                                    </p>
+                                </blockquote>
+                                <br>
+                                <!-- References Section -->
+                                <div class="container mt-5">
+                                    <div class="row justify-content-right">
+                                        <div class="col-lg-8">
+                                            <h2 class="mb-4">References</h2>
+                                            <ul class="list-unstyled">
+                                                <li>
+                                                     Justia (2023, July 7) Piracy in the Entertainment Industry & Legal Penalties. Retrieved from <a href="https://www.justia.com/entertainment-law/piracy-in-the-entertainment-industry/">https://www.justia.com/entertainment-law/piracy-in-the-entertainment-industry/</a>
+                                                </li>
+                                                <br>
+                                                <li>
+                                                    Team, S. K. (2023, July 13). Digital Piracy: How it is Jeopardizing the Flourishing Entertainment Industry and Creative Economy. Retrieved from <a href="https://www.sganalytics.com/blog/economics-of-piracy-and-financial-impact-on-the-entertainment-industry/">https://www.sganalytics.com/blog/economics-of-piracy-and-financial-impact-on-the-entertainment-industry/</a>
+                                                </li>
+                                                <br>
+                                                <li>
+                                                    Jindal, M. (2024, January 24). What Are The Consequences Of Piracy To The Creative Industries // Bytescare. Retrieved from <a href="https://blog.bytescare.com/what-are-the-consequences-of-piracy">https://blog.bytescare.com/what-are-the-consequences-of-piracy</a>
+                                                </li>
+                                                <br>
+                                                <li>
+                                                    Piracy. (2024). In Merriam-Webster Dictionary. Retrieved from <a href="https://www.merriam-webster.com/dictionary/piracy">https://www.merriam-webster.com/dictionary/piracy</a>
+                                                </li>
+                                                <br>
+                                                <li>
+                                                    Jindal, M. (2024, January 3). How Does Piracy Affect The Film Industry? // Bytescare. Retrieved from <a href="https://bytescare.com/blog/how-does-piracy-affect-the-film-industry">https://bytescare.com/blog/how-does-piracy-affect-the-film-industry</a>
+                                                </li>                                                
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer text-muted text-center py-3">
+                            Posted on June 26, 2024 by Rosa Mae Llamas
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="text-align: center;">
+        <a href="entertainment.html" class="btn btn-primary">Go back to reading Gender Issues</a>
+    </div>
+    <!-- Blog End -->
+
+    <!-- Chat Widget Icon -->
+    <div class="chat-widget">
+        <i class="fas fa-clipboard-list"> Quiz?</i>
+    </div>
+
+    <!-- Chat Widget Modal -->
+    <div class="chat-widget-modal" id="chatWidgetModal">
+        <div class="chat-widget-header">
+            <h5 style="margin-top: 10px;">Want to take a quick quiz?</h5>
+            <button type="button" class="close" onclick="closeChatWidget()">&times;</button>
+        </div>
+        <div class="chat-widget-body">
+            <p>Click the button below to take a quick quiz about the blogs topic!</p>
+            <a href="#" class="btn btn-primary" onclick="closeChatWidget(); openPopup('quiz2')">Take a Quiz!</a>
+        </div>
+    </div>
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white-50 footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h1 class="fw-bold text-primary mb-4">Global<span class="text-white">Voices</span></h1>
+                    <p>Global Voices is an enlightening platform created by a team of passionate students, dedicated to raising awareness and fostering global understanding on important topics.</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-square me-1" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square me-1" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square me-1" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square me-0" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Address</h5>
+                    <p><i class="fa fa-map-marker-alt me-3"></i>CVSU Imus Campus</p>
+                    <p><i class="fa fa-phone-alt me-3"></i>+994 093 2883</p>
+                    <p><i class="fa fa-envelope me-3"></i>globalvoices@gmail.com</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Quick Links</h5>
+                    <a class="btn btn-link" href="">About Us</a>
+                    <a class="btn btn-link" href="">Contact Us</a>
+                    <a class="btn btn-link" href="">Our Services</a>
+                    <a class="btn btn-link" href="">Terms & Condition</a>
+                    <a class="btn btn-link" href="">Support</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Newsletter</h5>
+                    <p>Stay informed and empowered with our newsletter, 
+                        delivering the latest insights and updates straight to your inbox!</p>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a href="#">2024 Global Voices</a> All Right Reserved.
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        Created By: <a href="#">BSCS-4B - FOR PROJECT ONLY -</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/parallax/parallax.min.js"></script>
+
+    <script>
+        
+        // JavaScript for Chat Widget
+        document.querySelector('.chat-widget').addEventListener('click', function() {
+            var modal = document.getElementById('chatWidgetModal');
+            modal.style.display = (modal.style.display === 'block') ? 'none' : 'block';
+        });
+
+        function closeChatWidget() {
+            document.getElementById('chatWidgetModal').style.display = 'none';
+        }
+
+        function openPopup(url) {
+            var width = 800; // Width of the popup window
+            var height = 750; // Height of the popup window
+            var left = (window.innerWidth - width) / 2; // Center horizontally
+            var top = (window.innerHeight - height) / 2; // Center vertically
+        
+            // Features string tailored to remove additional browser-specific bars
+            var features = 'width=' + width + ',height=' + height + ',left=' + left + ',top=' + top + 
+                ',toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=no';
+        
+            // Open the popup window with specified features
+            var popupWindow = window.open(url, '_blank', features);
+        
+            // Ensure the popup window gains focus
+            if (popupWindow) {
+                if (window.focus) {
+                    popupWindow.focus();
+                }
+            }
+        }
+    
+    </script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
